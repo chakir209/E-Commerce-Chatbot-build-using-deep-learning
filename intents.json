@@ -1,0 +1,804 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-) My name is ecom_bot!",
+        "Hello, thanks for visiting. My name is ecom_bot!",
+        "Hi there, My name is ecom_bot!. What can I do for you?",
+        "Hi there, My name is ecom_bot! How can I help?"
+      ]
+    },
+    {
+      "tag": "personal",
+      "patterns": [
+        "How are you?",
+        "How are you doing?",
+        "How is your day?"
+      ],
+      "responses": [
+        "I'm good, all's good, thanks. How about you?"
+      ]
+    },
+            {
+      "tag": "user response",
+      "patterns": [
+        "I'm good",
+        "Im good",
+        "Im doing good",
+        "I am good",
+        "I am okay"
+      ],
+      "responses": [
+        "Great to hear you are doing good."
+      ]
+    },   
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting. Hope I was able to help!",
+        "Have a nice day. Hope I was able to help!"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!", "thx", "thnks"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "items",
+      "patterns": [
+        "Which items do you have?",
+        "What kinds of items are there?",
+        "What do you sell?",
+        "What do you offer?",
+        "What can I buy?"
+      ],
+      "responses": [
+        "Search your preference in our flagship store's search bar to see all available products. "
+      ]
+    },
+    {
+      "tag": "payments",
+      "patterns": [
+        "Do you take credit cards?",
+        "Do you accept Mastercard?",
+        "Can I pay with Cash?",
+        "Are you cash only?",
+        "What are your payment methods?",
+        "How do I pay?"
+      ],
+      "responses": [
+        "We accept VISA, Mastercard and Cash"
+      ]
+    },
+    {
+      "tag": "track",
+      "patterns": [
+        "How can I track my order", 
+        "I want to track my order", 
+        "Can I track my order", 
+        "Track order"
+      ],
+      "responses": [
+        "Visit the order page, click on the specific order, select 'track my order', and check the status"
+      ]
+    },
+    {
+      "tag": "delivery",
+      "patterns": [
+        "How long does delivery take?",
+        "How long does shipping take?",
+        "Please Tell me about my delivery",
+        "When do I get my delivery?",
+        "Why is my order not delivered yet"
+      ],
+      "responses": [
+        "Delivery takes 2-4 days. Please bear with us!",
+        "Shipping takes 2-4 days.  Please bear with us!"
+      ]
+    },
+    {
+      "tag": "confirm",
+      "patterns": [
+        "My payment was processed successfully but I didn't get any order confirmation. What should I do?",
+        "Payment was completed but no confirmation",
+        "Order was not confirmed",
+        "Money deducted but order is not confirmed"
+      ],
+      "responses": [
+        "Daraz sends you an Email & SMS upon confirmation of your order. If it requires manual confirmation, our team will contact you within 24 hours after order placement. Delay in confirmation SMS may occur due to network error, you may receive it with a delay.",
+        "It takes upto 24 hours for confirmation, please bear with us! Type Need more help for more assistance. "
+      ]
+    },
+    {
+      "tag": "delay",
+      "patterns": [
+        "Why is my order delayed? ",
+        "Did my order get delayed?",
+        "Why is my order not delivered yet?",
+        "When do I get my delivery?"
+      ],
+      "responses": [
+        "We are really sorry if there has been a delay in your order! If your order is within delivery period, We recommend you to please wait during this period since our Delivery Heroes make 3 attempts to deliver your order!",
+        "If your order is past up to 3 days after delivery period, There may be logistic issues causing a delay in delivery. Please type 'Common reasons for delivery delay' to know more about this.",
+        "We appreciate if you could wait for your items as most orders are delivered successfully within this period.",
+        "If your order is past more than 3 days, Since there may be unexpected issues causing delivery delays, you can click on 'Need more Help' for further assistance."
+      ]
+    },
+    {
+      "tag": "reasons",
+      "patterns": [
+        "Common reasons for delivery delay",
+        "common reasons for delivery delay",
+        "reasons for delay",
+        "delivery delay"
+      ],
+      "responses": [
+        "Reasons include Seller Sourcing Issues, Courier Issues, Cross Border shipment delay, Wrong Address or Phone Number, and Unavailability of Customer. "
+      ]
+    },
+    {
+      "tag": "more",
+      "patterns": [
+        "Need more help",
+        "help me more",
+        "can I talk to an agent",
+        "can I call customer service",
+        "customer support number",
+        "how to contact customer service",
+        "customer service number",
+        "contact number for help",
+        "helpline number",
+        "How to become a seller",
+        "How to contact a seller"
+      ],
+      "responses": [
+        "Contact us for further information here: Phone: +212-111-1327. Timings are from 09:00 AM to 05:00 PM from Monday to Saturday."
+      ]
+    },
+    {
+      "tag": "cancel",
+      "patterns": [
+        "Can I cancel my order?",
+        "Why is my order cancelled?",
+        "How do I can cancel my order",
+        "Can I cancel an order"
+      ],
+      "responses": [
+        "Order can only be cancelled within 7 days of placement. Digital goods do not qualify for refund.",
+        "Visit my orders page to check status of specific orders."
+      ]
+    },
+    {
+      "tag": "refund",
+      "patterns": [
+        "Can I refund an item.",
+        "I want to refund an item",
+        "can I refund my order",
+        "Are refunds available"
+      ],
+      "responses": [
+        "Refund can only be issued within 7 days of placement. Digital goods do not qualify for refund.",
+        "Visit my orders page to check for specific orders."
+      ]
+    },
+    {
+      "tag": "refund status",
+      "patterns": [
+        "Why is the status Refunded when it's not credited?",
+        "No refund even though status is refunded",
+        "No refund when status says refunded",
+        "I did not receive my refund money",
+        "Refund money not received"
+      ],
+      "responses": [
+        "Please be patient as refunds take upto 30 days to receive into bank. "
+      ]
+    },
+    {
+      "tag": "refund",
+      "patterns": [
+        "Can I refund an item.",
+        "I want to refund an item",
+        "can I refund my order",
+        "Are refunds available"
+      ],
+      "responses": [
+        "Refund can only be issued within 7 days of placement. Digital goods do not qualify for refund.",
+        "Visit my orders page to check for specific orders."
+      ]
+    },
+    {
+      "tag": "return",
+      "patterns": [
+        "How long do return items take",
+        "When will my items be returned",
+        "When can I get a refund for return items?",
+        "Are refunds available for return?"
+      ],
+      "responses": [
+        "Return takes 6 to 10 business days. There are 2 parts to the return process. In the first part, we check the items received from you to verify the issue highlighted in your return claim. Once we've verified and accepted your return, we initiate the refund process which takes 1 business day for Daraz wallet and 2-10 business days for bank or card. "
+      ]
+    },
+    {
+      "tag": "withdraw refunds",
+      "patterns": [
+        "How to withdraw refunds from wallet?",
+        "Withdraw funds",
+        "Can I withdraw refunds"
+      ],
+      "responses": [
+        "Withdrawing refunds from your wallet is very easy. Please follow the steps below: Step 1: Click on the 'Wallet' icon on the top right corner of the Daraz App, or click here. Step 2: Click on the 'Balance Details' Icon. Step 3: Click on 'Withdraw' button. Step 4: Enter your bank account details and click 'Withdraw'. Step 5: You will receive a verification email, click confirm to initiate your withdrawal request."
+      ]
+    },
+    {
+      "tag": "order status",
+      "patterns": [
+        "What is my order status",
+        "I want to know my return status",
+        "How to return status"
+      ],
+      "responses": [
+        "Please visit the My Orders page for a list of your confirmed orders."
+      ]
+    },
+    {
+      "tag": "use voucher",
+      "patterns": [
+        "How to use a voucher?",
+        "Can I use a voucher?",
+        "How to use a voucher?"
+      ],
+      "responses": [
+        "You can add a voucher by clicking on My Cart > Check Out > Enter Voucher Code > APPLY. "
+      ]
+    },
+        {
+      "tag": "profile info",
+      "patterns": [
+        "How can I change my profile information",
+        "I want to change my password",
+        "I want to change my phone number",
+        "I want to change my address",
+        "I want to Reset my password",
+        "I want to delete my account",
+        "delete my account"
+      ],
+      "responses": [
+        "You can easily add or change your account details by following the steps below: Step 1: Click on 'Account', Step 2: Click on 'Manage my account' from the icon, Step 3: You change or edit your name, address, email address, mobile number, etc., Step 4: Fill in the required details, and click on Save. Note: You can also change your delivery address from the Checkout page before proceeding to pay."
+      ]
+    },
+        {
+      "tag": "mobile app",
+      "patterns": [
+        "Can I download a mobile app for this?",
+        "Mobile app",
+        "Download mobile app"
+      ],
+      "responses": [
+        "You can download the Daraz Mobile App from both IOS App Store, and Google Play Store. "
+      ]
+    } ,
+    {
+      "tag": "specific_product",
+      "patterns": [
+        "Tell me about [product]",
+        "What can you say about [product]?"
+      ],
+      "responses": [
+        "Certainly! [Product] is a [description of the product]. It is known for [highlighted features]."
+      ]
+    },
+    {
+      "tag": "promotions_discounts",
+      "patterns": [
+        "Are there any promotions?",
+        "Tell me about discounts",
+        "Any ongoing sales?"
+      ],
+      "responses": [
+        "Yes, we currently have [X]% off on [specific category/product]."
+      ]
+    },
+    {
+      "tag": "product_sizes_availability",
+      "patterns": [
+        "Is [product] available in [size]?",
+        "What sizes are available for [product]?"
+      ],
+      "responses": [
+        "Yes, [product] is available in [size] and other sizes as well."
+      ]
+    },
+    {
+      "tag": "product_comparisons",
+      "patterns": [
+        "Compare [product1] and [product2]",
+        "Which is better, [product1] or [product2]?"
+      ],
+      "responses": [
+        "Both [product1] and [product2] have their unique features. It depends on your preferences."
+      ]
+    },
+    {
+      "tag": "purchase_assistance",
+      "patterns": [
+        "Help me choose a [category]",
+        "Recommend me a [product] within my budget."
+      ],
+      "responses": [
+        "Sure, based on your preferences, I recommend [product]."
+      ]
+    },
+    {
+      "tag": "specific_returns",
+      "patterns": [
+        "How to return [product]?",
+        "Return process for [product]"
+      ],
+      "responses": [
+        "To return [product], you can follow the standard return process. Please visit [link] for more details."
+      ]
+    },
+    {
+      "tag": "warranties_policies",
+      "patterns": [
+        "Tell me about your warranty",
+        "What is your return policy?"
+      ],
+      "responses": [
+        "Our warranty period is [X] days. You can find details about our return policy [here]."
+      ]
+    },
+    {
+      "tag": "company_information",
+      "patterns": [
+        "Tell me more about your company",
+        "Who founded [company]?",
+        "Where are you located?"
+      ],
+      "responses": [
+        "We are [company], founded in [year]. Our headquarters are located in [location]."
+      ]
+    },
+    {
+      "tag": "product_usage_tips",
+      "patterns": [
+        "How to use [product]?",
+        "Any tips for using [product]?"
+      ],
+      "responses": [
+        "For optimal use of [product], we recommend [instructions/tips]."
+      ]
+    } ,
+    {
+      "tag": "shipping_information",
+      "patterns": [
+        "How much does shipping cost?",
+        "Do you offer international shipping?",
+        "Can I change my shipping address after placing an order?",
+        "What if my order is damaged during shipping?"
+      ],
+      "responses": [
+        "Shipping costs depend on the destination and selected shipping method. Yes, we offer international shipping. Unfortunately, we cannot change the shipping address after an order is placed. If your order arrives damaged, please contact customer support."
+      ]
+    },
+    {
+      "tag": "product_availability",
+      "patterns": [
+        "Is [product] in stock?",
+        "When will [product] be back in stock?",
+        "Can I pre-order out-of-stock items?",
+        "Are there any upcoming product launches?"
+      ],
+      "responses": [
+        "You can check the availability of [product] on our website. Unfortunately, we do not have information on specific restocking dates. Pre-orders are available for select items. Stay tuned for our upcoming product launches!"
+      ]
+    },
+    {
+      "tag": "size_and_fit",
+      "patterns": [
+        "What size should I order?",
+        "Do you have a size guide?",
+        "Can I exchange an item for a different size?",
+        "What if the product doesn't fit?"
+      ],
+      "responses": [
+        "Refer to our size guide for recommendations. Yes, we have a size guide available. Items can be exchanged for a different size within our return policy. If the product doesn't fit, you can initiate a return."
+      ]
+    },
+    {
+      "tag": "order_modification",
+      "patterns": [
+        "Can I add items to my existing order?",
+        "Is it possible to change the color of an item in my order?",
+        "How can I modify my order?",
+        "Can I cancel part of my order?"
+      ],
+      "responses": [
+        "Unfortunately, we cannot add items to an existing order. Once an order is placed, changes, including color modifications, are not possible. If you need to modify your order, please contact customer support. Partial order cancellations are not supported."
+      ]
+    },
+    {
+      "tag": "account_security",
+      "patterns": [
+        "How can I secure my account?",
+        "What should I do if I forget my password?",
+        "Is my payment information secure?",
+        "Tell me about two-factor authentication."
+      ],
+      "responses": [
+        "Secure your account with a strong password and enable two-factor authentication. If you forget your password, use the 'Forgot Password' option. We prioritize the security of your payment information through secure encryption and compliance with industry standards."
+      ]
+    },
+    {
+      "tag": "loyalty_program",
+      "patterns": [
+        "Do you have a loyalty program?",
+        "How can I join your rewards program?",
+        "Tell me about earning points.",
+        "Can I redeem points for cash?"
+      ],
+      "responses": [
+        "Yes, we have a loyalty program. You can join our rewards program on our website. Earn points through purchases and other activities. Points are redeemable for discounts, not cash."
+      ]
+    },
+    {
+      "tag": "business_partnership",
+      "patterns": [
+        "Can I become a reseller?",
+        "How can I partner with your business?",
+        "Tell me about your affiliate program.",
+        "Do you offer wholesale pricing?"
+      ],
+      "responses": [
+        "We offer reseller and partnership opportunities. Visit our website for information on our affiliate program and wholesale pricing. Feel free to contact our partnership team for further details."
+      ]
+    },
+    {
+      "tag": "account_creation",
+      "patterns": [
+        "How do I create an account?",
+        "Is an account required to make a purchase?",
+        "Tell me about account benefits.",
+        "Can I shop as a guest?"
+      ],
+      "responses": [
+        "You can create an account by clicking 'Sign Up' on our website. While an account is not required, it offers benefits like order tracking and exclusive deals. Yes, you can shop as a guest, but account creation is recommended for a better shopping experience."
+      ]
+    },
+    {
+      "tag": "order_tracking",
+      "patterns": [
+        "How can I track my order?",
+        "Tell me about the order tracking process.",
+        "Is real-time tracking available?",
+        "Can I track multiple orders at once?"
+      ],
+      "responses": [
+        "You can track your order by visiting the 'Order Tracking' page on our website. Our order tracking provides real-time updates. Unfortunately, tracking multiple orders at once is not currently supported."
+      ]
+    },
+    {
+      "tag": "promotions",
+      "patterns": [
+        "Are there any ongoing promotions?",
+        "How can I apply a discount code?",
+        "Tell me about your loyalty program.",
+        "Can I combine multiple discounts?"
+      ],
+      "responses": [
+        "Check our 'Promotions' page for ongoing deals. You can apply a discount code during checkout. Learn about our loyalty program for additional savings. Generally, multiple discounts cannot be combined in a single order."
+      ]
+    },
+    {
+      "tag": "privacy_policy",
+      "patterns": [
+        "What is your privacy policy?",
+        "Tell me about your data protection practices.",
+        "Is my personal information secure?",
+        "How is my data used?"
+      ],
+      "responses": [
+        "Our privacy policy outlines our data protection practices. We prioritize the security of your personal information and adhere to industry standards. Visit our website to review our detailed privacy policy."
+      ]
+    },
+    {
+      "tag": "product_recommendations",
+      "patterns": [
+        "Can you recommend products based on my preferences?",
+        "How does your recommendation system work?",
+        "Tell me about personalized product suggestions.",
+        "Can I disable product recommendations?"
+      ],
+      "responses": [
+        "Yes, we offer personalized product recommendations. Our recommendation system analyzes your preferences to suggest relevant items. You can disable product recommendations in your account settings."
+      ]
+    },
+    {
+      "tag": "product_warranty",
+      "patterns": [
+        "Do your products come with a warranty?",
+        "How long is the warranty period?",
+        "What does the warranty cover?",
+        "How can I claim warranty service?"
+      ],
+      "responses": [
+        "Many of our products come with a warranty. Warranty periods vary by product. Review the product description for warranty details. To claim warranty service, contact our customer support with your order details and issue description."
+      ]
+    },
+    {
+      "tag": "technical_support",
+      "patterns": [
+        "I'm facing technical issues with your website/app.",
+        "Can you assist with technical problems?",
+        "Tell me about technical support channels.",
+        "Is there a dedicated IT support team?"
+      ],
+      "responses": [
+        "We apologize for any technical issues. Please contact our technical support team through [contact channels] for assistance. Our dedicated IT support team is here to help resolve any problems you may encounter."
+      ]
+    },
+    {
+      "tag": "social_media",
+      "patterns": [
+        "Do you have social media accounts?",
+        "How can I connect with you on social media?",
+        "Tell me about exclusive social media promotions.",
+        "Can I share my shopping experience on social media?"
+      ],
+      "responses": [
+        "Yes, we have active social media accounts. Connect with us on [social media platforms] for updates and promotions. We often run exclusive promotions on social media. Feel free to share your shopping experience with us on social media!"
+      ]
+    },
+    {
+      "tag": "community_feedback",
+      "patterns": [
+        "How can I provide feedback on your products?",
+        "Is there a community forum for customers?",
+        "Tell me about the customer feedback process.",
+        "Can I suggest new product ideas?"
+      ],
+      "responses": [
+        "We appreciate your feedback! You can provide product feedback on the respective product pages. While we don't have a community forum, we value customer input. Feel free to suggest new product ideas through our customer support channels."
+      ]
+    },
+    {
+      "tag": "size_guide",
+      "patterns": [
+        "Is there a size guide for your products?",
+        "How do I find the right size?",
+        "Tell me about your size recommendations.",
+        "Where can I access the size chart?"
+      ],
+      "responses": [
+        "Yes, we provide a size guide for our products. You can find size recommendations and access the size chart on each product page."
+      ]
+    },
+    {
+      "tag": "lost_package",
+      "patterns": [
+        "What should I do if my package is lost?",
+        "My package hasn't arrived. What now?",
+        "Can you help with a missing package?",
+        "Tell me about the lost package procedure."
+      ],
+      "responses": [
+        "We apologize for the inconvenience. If your package is lost, please contact our customer support with your order details, and we will assist you in resolving the issue."
+      ]
+    },
+    {
+      "tag": "product_availability",
+      "patterns": [
+        "How can I check product availability?",
+        "Is the product in stock?",
+        "Tell me about product availability updates.",
+        "Can I backorder out-of-stock items?"
+      ],
+      "responses": [
+        "You can check product availability on the product page. If a product is out of stock, you may see an option to receive availability updates. Backordering options vary by product."
+      ]
+    },
+    {
+      "tag": "gift_cards",
+      "patterns": [
+        "Do you offer gift cards?",
+        "How can I purchase a gift card?",
+        "Tell me about your gift card policy.",
+        "Can I use multiple gift cards in a single purchase?"
+      ],
+      "responses": [
+        "Yes, we offer gift cards. You can purchase them on our website. Our gift card policy provides details on redemption. Generally, you can use multiple gift cards in a single purchase."
+      ]
+    },
+    {
+      "tag": "bulk_order",
+      "patterns": [
+        "Can I place a bulk order?",
+        "Tell me about bulk ordering options.",
+        "Is there a discount for bulk purchases?",
+        "How to proceed with a large quantity order?"
+      ],
+      "responses": [
+        "Yes, we accept bulk orders. For bulk ordering options and potential discounts, please contact our bulk order support team for personalized assistance."
+      ]
+    },
+    {
+      "tag": "product_returns",
+      "patterns": [
+        "How can I initiate a product return?",
+        "Tell me about your product return policy.",
+        "Is there a time limit for product returns?",
+        "Can I return a product without the original packaging?"
+      ],
+      "responses": [
+        "To initiate a product return, visit the 'Returns' page on our website. Our return policy specifies time limits and packaging requirements. Please review our return policy for detailed instructions."
+      ]
+    },
+    {
+      "tag": "international_shipping",
+      "patterns": [
+        "Do you offer international shipping?",
+        "Tell me about your international shipping rates.",
+        "How long does international shipping take?",
+        "Can I track my internationally shipped order?"
+      ],
+      "responses": [
+        "Yes, we offer international shipping. Shipping rates and delivery times vary by destination. You can track your internationally shipped order using the provided tracking information."
+      ]
+    },
+    {
+      "tag": "product_reviews",
+      "patterns": [
+        "How can I write a product review?",
+        "Tell me about the product review process.",
+        "Can I edit or delete my product review?",
+        "Do you offer incentives for writing reviews?"
+      ],
+      "responses": [
+        "You can write a product review on the product page. Reviews are valuable to us. Once submitted, reviews cannot be edited or deleted. Occasionally, we offer incentives for quality reviews."
+      ]
+    },
+    {
+      "tag": "membership_program",
+      "patterns": [
+        "Do you have a membership program?",
+        "Tell me about the benefits of your membership.",
+        "How can I join your membership program?",
+        "Is there a fee for becoming a member?"
+      ],
+      "responses": [
+        "Yes, we have a membership program with exclusive benefits. You can join by visiting the 'Membership' section on our website. While basic membership is free, certain premium tiers may have associated fees."
+      ]
+    },
+    {
+      "tag": "product_care",
+      "patterns": [
+        "How should I care for your products?",
+        "Tell me about product care recommendations.",
+        "Do you provide care instructions with the product?",
+        "Can I wash or clean this product at home?"
+      ],
+      "responses": [
+        "Product care recommendations are usually provided on the product page. Additionally, care instructions may be included with the product. If in doubt, feel free to contact us for guidance on washing or cleaning specific items."
+      ]
+    },
+    {
+      "tag": "price_match",
+      "patterns": [
+        "Do you offer price matching?",
+        "Tell me about your price match policy.",
+        "How can I request a price match?",
+        "Is there a time limit for price matching?"
+      ],
+      "responses": [
+        "Yes, we offer price matching. Our price match policy specifies eligibility criteria and procedures. To request a price match, please contact our customer support within the specified time frame."
+      ]
+    },
+    {
+      "tag": "product_customization",
+      "patterns": [
+        "Can I customize a product?",
+        "Tell me about product customization options.",
+        "Is there an extra cost for customization?",
+        "How to place a customized order?"
+      ],
+      "responses": [
+        "Yes, some products can be customized. Check the product page for customization options and any associated costs. To place a customized order, follow the instructions provided on the product customization section."
+      ]
+    },
+    {
+      "tag": "product_exchanges",
+      "patterns": [
+        "How can I request a product exchange?",
+        "Tell me about your product exchange policy.",
+        "Is there a fee for product exchanges?",
+        "Can I exchange a product without the original receipt?"
+      ],
+      "responses": [
+        "To request a product exchange, please visit the 'Exchanges' page on our website. Our exchange policy outlines eligibility and any associated fees. Original receipts are usually required for product exchanges."
+      ]
+    },
+    {
+      "tag": "mobile_notifications",
+      "patterns": [
+        "Can I receive order notifications on my mobile?",
+        "Tell me about your mobile notification options.",
+        "How to enable order updates on my phone?",
+        "Is there a mobile app for order notifications?"
+      ],
+      "responses": [
+        "Yes, you can receive order notifications on your mobile. Check our mobile notification options in your account settings. To enable order updates on your phone, ensure that you have our mobile app installed for timely notifications."
+      ]
+    },
+    {
+      "tag": "product_disposal",
+      "patterns": [
+        "How should I dispose of your products?",
+        "Tell me about product disposal guidelines.",
+        "Can I recycle your product packaging?",
+        "Do you have a take-back program for old products?"
+      ],
+      "responses": [
+        "Product disposal guidelines are often provided on the product page or packaging. Please follow local regulations for product disposal. Some product packaging may be recyclable. Contact us to inquire about any available take-back programs."
+      ]
+    },
+    {
+      "tag": "cancel_order",
+      "patterns": [
+        "Can I cancel my order after payment?",
+        "Tell me about your order cancellation policy.",
+        "Is there a fee for order cancellation?",
+        "How to proceed with canceling an order?"
+      ],
+      "responses": [
+        "Orders can usually be canceled within a specified time frame. Check our order cancellation policy for details and any associated fees. To proceed with canceling an order, visit the 'Cancel Order' section on our website or contact our customer support."
+      ]
+    },
+    {
+      "tag": "chat_support",
+      "patterns": [
+        "Do you offer live chat support?",
+        "Tell me about your chat support hours.",
+        "How can I initiate a chat with support?",
+        "Is there a dedicated chat support team?"
+      ],
+      "responses": [
+        "Yes, we offer live chat support during specified hours. You can initiate a chat with our support team on our website. Our dedicated chat support team is here to assist you with any queries."
+      ]
+    },
+    {
+      "tag": "loyalty_rewards",
+      "patterns": [
+        "Do you have a loyalty rewards program?",
+        "Tell me about earning loyalty points.",
+        "How can I redeem my loyalty rewards?",
+        "Is there an expiration date for loyalty points?"
+      ],
+      "responses": [
+        "Yes, we have a loyalty rewards program. You can earn loyalty points with each purchase. To redeem your loyalty rewards, visit the 'Rewards' section in your account. Loyalty points may have an expiration date, so check your account for details."
+      ]
+    },
+    {
+      "tag": "multiple_shipments",
+      "patterns": [
+        "Can I split my order into multiple shipments?",
+        "Tell me about multiple shipment options.",
+        "Is there an extra cost for split shipments?",
+        "How to request multiple shipments for an order?"
+      ],
+      "responses": [
+        "Generally, orders are shipped together. However, you may contact our customer support to inquire about splitting your order into multiple shipments. Any associated costs will be communicated during the process."
+      ]
+    }
+  ]
+}
